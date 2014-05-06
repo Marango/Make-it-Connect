@@ -1,0 +1,57 @@
+body{padding:0px; margin:0px; font-family:Arial, Verdana;background-color:#fff;}
+footer{background:#333;color:#c6c6c6;padding:20px;text-align: center;font-family: Arial;font-size: 14px;
+    /*position:absolute;bottom:0;*/width:100%;}
+footer a{color:#c6c6c6; text-decoration: none;}
+footer a:hover{color:#ddd;}
+.menu{
+    width:100%;
+    background:rgba(255,255,255,0.5);
+    /*background-image: url(splatter-bkgd.jpg);*/
+    /*background-repeat:no-repeat;*/
+    height:80px;
+    /*text-align: center;*/
+    vertical-align: middle;
+    padding-left: 35px;
+    margin-top: 0px;
+    line-height:80px;
+    /*background:pink;*/
+}
+
+.menu #logo{
+
+    /*background: url(/img/logo.png) no-repeat;*/
+    /*padding-left:10px;*/
+    font-weight:bold;font-family:Arial;font-size: 37px;color:#444;
+    vertical-align: middle;
+    text-decoration: none;  
+    padding-right:20px;
+}
+.menu #nav{    
+    font-family: "Arial";
+    display:inline-block;
+    color: #707276;
+    text-decoration: none;  
+    font-size: 16px;
+    vertical-align: middle;
+    padding-right:20px;
+
+}
+
+.menu #nav:hover{
+    color: #009dd9;
+    cursor: pointer;
+}
+
+/* Trying to make gif play on hover
+/*.menu #logoimg{
+    display:inline-block;
+    position:relative;
+    background-image:url(img/logo.png) no-repeat;
+    background-position: center;
+    width:38px;
+    height:100px;
+    vertical-align: middle;
+}
+.menu #logoimg:hover{
+    background-image:url(img/logo.gif);
+}*/
