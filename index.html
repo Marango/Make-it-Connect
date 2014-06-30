@@ -1,286 +1,35 @@
 <!DOCTYPE html>
 <head>
-    <title>Create It Lab</title>
-
-    <meta charset="utf-8">  
-
-    <meta name="description" content="Create It Labs is a non-profit designed to get professionals involved in the classroom."> 
-
-    <meta name="keywords" content="science, STEAM, STEM, education, engineering, mathematics, technology, arts, mathematics, math, art">
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <!-- This is jquery. Sarah says this is inserting a javascript library that will let us do a lot of things -->
-    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
-    <!--...this one does cycles-->
-
-    <link rel="icon" type="image/x-icon" href="http://makeitconnect.org/favicon.ico"/>
-
+    <title>CreateItLab.org</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Make it Science">
+    <meta name="keywords" content="science, education">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </head>
 <body>
-<!-- TOP MENU -->
-<div class="menu">
-        <!--<a href="/" id="logo">Create It Lab</a>-->
-        <!--old logo-->
-        <a href="/" id="logo"><img src="img/newlogo.png"width="200" style="vertical-align:middle;"></a>
-        <!-- this is where we put the logo -->
-
-        <a id="nav">Projects</a>
-        <a id="nav">News & Events</a>
-        <a id="nav">For Educators</a>
-        <a id="nav">Our Mission</a>
-        <!-- These are the tabs at the top -->
-        <!-- Fix this font! -->
-        <!--<a href="/" id="logoimg"><img src="img/newlogo.png"width="200" style="vertical-align:middle;"></a>-->
-        <!-- old logo -->
-</div>
-<!-- SLIDESHOW -->
-<div id="slideshowContainer">
-     <div class="slideshow">
-         <img src="img/lumidance1.jpg"/>
-         <img src="img/lumidance2.jpg"/>
-         <img src="img/lumidance3.jpg"/>
-         <!-- These are pictures for this slideshow -->
-     </div> 
-    <span id="text"><br>
-        <h2>LUMIDANCE</h2><br>
-        <!-- Fix this font -->
-        <p>Join us for a magical night of lights, music, and dancing.</p><br>
-        <a href="http://www.wcax.com/story/24945679/essex-students-put-on-led-light-dance">Watch the video.</a>
-        <!-- For now this text is not dynamic -->
-    </span> 
-     <ul id="nav">
-         <li id="prev"><a href="#">Previous</a></li>
-         <li id="next"><a href="#">Next</a></li>
-         <!-- these refer to javascript -->
-     </ul>
-</div>
-<div id="container">
-    <div class="contentblank"></div>
-    <div class="contentdiv" id="contentbox">
-        <h2>LUMIDANCE</h2>
-        <p><b>Astoundingly Magical</b><br><br>“It’s amazing to see something as old as dance and something as new as software and technology come together to make a Lumidance.” <br>- Nipu Coe, EHS Dancer</p>
-        <!-- It would be nice if these did not pop out... -->
-    </div>
-    <div class="contentdiv" id="contentbox">
-        <h2>WATER ROCKETS</h2>
-        <p><b>A Splash of Art and Science</b><br><br>Check out the fun on our YouTube channel!</p>
-    </div>
-    <div class="contentdiv" id="contentbox">
-        <h2>POWER IN THE WIND</h2>
-        <p><b>Energy Conservation with Style</b><br><br>Watch middle school students compete to design the best windmill!</p>
-    </div>
-    <div class="contentblank"></div>
-</div>
-<span id="space"><br></span>
-<footer>
-    <a href="/">Privacy</a> | <a href="/">Terms of Use</a> | <a href="/">Site Map</a><br>
-    <span style="color:#7d7d7d;font-size:12px;">&copy 2014 Create It Lab</span>
-</footer>
-</html>
-<script type="text/javascript">
-$(document).ready(function() {
-    //when the document has loaded...
-    $('.slideshow').cycle({
-        fx: 'fade',
-        //elements labeled with slideshow, do a cycle fade transition
-        pause: 1,
-        prev: '#prev',
-        next: '#next'
-        //pauses for 1, prev and next refer to these ids
-    });
-
-});
-</script>
-
-<style type="text/css">
-* {
-    margin:0px;
-    padding:0px;
-    border:0px;
-}
-body {
-    font-family:Verdana;
-    background:url(img/wave.jpg) repeat-x;
-}
-h1 {
-    text-indent:-9999px;
-    width: 340px;
-    height:92px;
-    margin: 0 auto;
-}
-.menu{
-    width:100%;
-    background:rgba(255,255,255,0.5);
-    /*background-image: url(splatter-bkgd.jpg);*/
-    /*background-repeat:no-repeat;*/
-    height:80px;
-    /*text-align: center;*/
-    vertical-align: middle;
-    padding-left: 35px;
-    margin-top: 0px;
-    line-height:80px;
-    /*background:pink;*/
-}
-
-.menu #logo{
-
-    /*background: url(/img/logo.png) no-repeat;*/
-    /*padding-left:10px;*/
-    font-weight:bold;font-family:Arial;font-size: 37px;color:#444;
-    vertical-align: middle;
-    text-decoration: none;  
-    padding-right:22px;
-}
-.menu #nav{    
-    font-family: "Arial";
-    display:inline-block;
-    color: #707276;
-    text-decoration: none;  
-    font-size: 16px;
-    vertical-align: middle;
-    padding-right:20px;
-
-}
-
-.menu #nav:hover{
-    color: #009dd9;
-    cursor: pointer;
-}
-
-/* Trying to make gif play on hover
-/*.menu #logoimg{
-    display:inline-block;
-    position:relative;
-    background-image:url(img/logo.png) no-repeat;
-    background-position: center;
-    width:38px;
-    height:100px;
-    vertical-align: middle;
-}
-.menu #logoimg:hover{
-    background-image:url(img/logo.gif);
-}*/
-
-#slideshowContainer {
-    max-width: 100%;
-    height:400px; /*prev 300 */
-    margin: 10px auto 0 auto;
-    background:black;
-    z-index: -9999;
-    /*border:5px solid #666;*/
-}
-.slideshow {
-    position: absolute;
-    right:0;
-    top:90px;
-}
-.slideshow img {
-    position:relative;
-    width:700px;
-    height:400px; /*prev height:300,500 */
-    z-index:-999;
-}
- #text{
-    background:rgba(0,0,0,0.8);
-    float:left;
-    position: absolute;
-    left: 0px;
-    top:90px;
-    padding:10px;
-    padding-left:70px;
-    padding-right:20px;
-    color:white;
-    width:200px;
-    height:380px;
-    z-index:150;
-}
-#text h2{font-family: "Arial"; color: #009dd9;font-weight: normal;}
-#text p{font-family: Arial;}
-#text a{font-family: Arial;color:#009dd9;text-decoration: none}
-#nav {
-    list-style-type:none;
-    z-index:150;
-}
-#nav li {
-    width:58px;
-    height:102px;
-    text-indent:-9999px;
-    outline:none;
-}
-#prev a {
-    width: 29px;
-    height: 50px;
-    background: url(img/arrows.png) no-repeat bottom left;
-    background-position: 0px:0px;
-    position: absolute;
-    /*left: 120px;*/
-    /*top:250px;*/
-
-    left: 20px; 
-    top:210px;
-    z-index: 9000;
-}
-#next a {
-    background:url(img/arrows.png) no-repeat bottom right;
-    width:29px;
-    height:50px;
-    position:absolute;
-    /*top:250px;*/
-    /*right:220px;*/
-
-    /*left: 400px;*/  /*uncomment for arrows with left textbox description*/
-    /*left: 760px;*/
-    right:20px;
-    top:210px;
-    z-index: 9000;
-}
-#next a:hover {
-    opacity: .6;
-    transition: opacity .5s;
-    color: #707276;
-}
-#prev a:hover {
-    opacity: .6;
-}
-a{  
-    transition: opacity .5s;
-    color: #707276;
-}
-
-#container {height: 100%; width:100%; font-size: 0;text-align: center; }
-    #container h2{font-family: "Arial"; color: #009dd9;font-weight: normal;text-align: left;padding-left:10px;padding-top: 10px;}
-    #container p{font-family: Arial; text-align: left;padding:10px;}
-/*#left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;padding:5px;margin:5px;}*/
-.contentdiv{position:relative;z-index:9999;display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;padding:5px;/*margin-top:20px;*/ margin-top:-65px; margin-left:5px; margin-right:5px;width: 28%;}
-.contentblank{display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;padding:5px;margin:5px;width: 2%;}
-#contentbox { background: #e3e3e3;min-height:180px;/*border:1px solid #dde;*/ border:1px solid #a0a0a0; /*-webkit-box-shadow: -3px -3px 9px #e6e6e6;box-shadow: -3px -3px 9px rgba(0, 0, 0, 0.08);*/
--webkit-box-shadow: 0px 0px 5px 2px rgba(50, 50, 50, 0.4);
--moz-box-shadow:    0px 0px 5px 2px rgba(50, 50, 50, 0.4);
-box-shadow:         0px 0px 5px 2px rgba(50, 50, 50, 0.4);
-transition: 1s;}
-#contentbox:hover{background:#eee;}
-footer{background:#333;color:#c6c6c6;padding:20px;text-align: center;font-family: Arial;font-size: 14px;
-    /*position:absolute;bottom:0;*/width:100%;}
-footer a{color:#c6c6c6; text-decoration: none;}
-footer a:hover{color:#ddd;}
-
-/*@media screen and (max-height: 600px) {
-    footer {display:none;}
-}*/
-@media screen and (max-width: 650px) {
-    .contentdiv {display:none;}
-    #space{display:none;}
-    footer{margin-top:-20px;}
-}
-@media screen and (max-width: 550px) {
-    .menu #nav{display:none;}
-    /*#text{font-size: 1.2em;}*/
-}
-@media screen and (max-width: 500px) {
-    #text{display:none;}
-}
-@media screen and (max-width: 300px) {
-    .menu #logo{display:none;}
-
-}
-</style>
+	<div class="content center">
+		<nav>
+            <a href="/about.html">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/ontour.html">On Tour</a>
+            <a href="/contact.html">Contact</a>
+        </nav><br>
+        <a href="/">
+            <img src="images/CiL_logo2.png">   
+        </a>
+		<!-- <a href="/" class="logo-wrap">
+            <h1 class="logo-big">Make It Science</h1>
+        </a>     <br><br><br><br><br><br>-->
+        <br>
+		<section class="categories">
+            <a href="/steam.html"><img src="images/steam.png" alt="From STEM to STEAM"></a>
+            <a href="/air.html"><img src="images/aero2.png" alt="AeroSci"></a>
+            <a href="/electricity.html"><img src="images/electro.png" alt="ElectroSci"></a>
+            <a href="/magnetism.html"><img src="images/magneto.png" alt="MagnetoSci"></a>
+            <a href="/music.html"><img src="images/musica.png" alt="MusicaSci"></a>
+        </section>
+        <br><hr>
+		<footer>&copy; 2011-2014 CreateItLab</footer>
+	</div>
+</body>

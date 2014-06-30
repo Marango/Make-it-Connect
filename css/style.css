@@ -1,0 +1,183 @@
+ul{margin:0;}
+.block {display:block;}
+
+			body{
+				background:#d8d8c8;
+				font-family:Arial;
+			}
+			.content{
+				margin:20px;
+			}
+			img a:hover{
+			    background-position:0px -13px;
+
+			}
+			a.back{
+				height:13px;
+				width:248px;
+				display:block;
+				clear:both;
+				margin:30px auto;
+				position:relative;
+				bottom:10px;
+				left:50%;
+				margin-left:-124px;
+			}
+			a.back:hover{
+				background-position:0px -13px;
+			}
+
+.center{text-align:center;}
+
+.card{
+float: left;
+width: 170px;
+margin: 0 25px 62px 0;
+border: none;
+position:relative;
+}
+
+.a {
+font-weight: bold;
+}
+.img{
+width: 180px;
+height: 180px;
+}
+
+.title{
+    position:absolute;
+    top:0px; /* position will be on top */
+    left:0px;
+    width: 168px;
+    /* styling bellow */
+    background-color:black;
+    font-size:19px;
+    color:white;
+    opacity:0.6; /* transparency */
+    filter:alpha(opacity=60); /* IE transparency */
+    cursor: pointer;
+    line-height: 23px;
+    margin: 0;
+    padding: 9px 11px;
+    overflow: hidden;
+}
+
+#centercontent {
+    padding:0 50px;
+}
+
+#about {
+    text-align:left;
+    max-width:600px;
+    margin: 0 auto;
+}
+
+#pucks {text-align: center;}
+#pucks img{
+  margin-right:10px;
+}
+
+/* PETER's ADDITIONS */
+body {
+  width: 820px;
+  margin: 0 auto;
+}
+
+.logo-wrap{
+    height:13px;
+    width:248px;
+    display:block;
+    clear:both;
+    margin:30px auto;
+    position:relative;
+    bottom:10px;
+    left:50%;
+    margin-left:-124px;
+}
+
+.logo-big{
+  position:relative;
+  text-indent:-9000px;
+  width:277px;
+  height:150px;
+  margin:0px;
+  background:transparent url(../images/title_rsg6.png) no-repeat top left;
+}
+
+.logo {
+  float: left;
+  line-height: 30px;
+  padding:0;margin:0;
+  padding-top:5px;
+}
+
+/* only apply for a <header><nav> (not in index.html) */
+header nav {
+  float: right;
+  line-height: 65px;
+}
+
+header .categories {
+  float:left;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.categories img {
+  width: 75px;
+  height: 75px;
+}
+
+header .categories img {
+  width: 50px;
+  height: 50px;
+}
+
+nav a{
+  background: #888 url(../images/bgbutton.png) repeat-x;
+  font-size:14px;
+  margin:0 18px;
+  padding: 4px;
+  font-weight:bold;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+  -moz-box-shadow: 0 1px 3px #000;
+  -webkit-box-shadow: 0 1px 3px #000;
+  box-shadow:0 1px 3px #000;
+  text-shadow: 0 -1px 1px #222;
+  outline:none;
+}
+
+nav a:hover{
+  background-color:#33c;
+  color:#fff;
+}
+
+footer {
+  text-align: center;
+  color:grey;
+  font-weight: bold;
+}
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
